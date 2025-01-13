@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+    <title>Вакансии с PHP</title>
+{% endblock %}
+
+{% block body_cute %}
+    <h1 class="last_vacancy">Последние вакансии на hh.ru</h1>
+    <div class="container">
+        <div class="row">
+            {% for vacancy in vacancies %}
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ vacancy.0 }}</h5>
+                            <p class="card-text">{{ vacancy.1 }}</p>
+                            <p class="card-text"><strong>Навыки:</strong>
+                                <ul>
+                                    {% if vacancy.2 != ' ' %}
+                                            <p>{{ vacancy.2|join:", " }}</p>
+                                    {% else %}
+                                        <p>Не указано</p>
+                                    {% endif %}
+                                </ul>
+                            </p>
+                            <p class="card-text"><strong>Компания:</strong> {{ vacancy.3 }}</p>
+                            <p class="card-text"><strong>Зарплата:</strong> {{ vacancy.4 }}</p>
+                            <p class="card-text"><strong>Адрес:</strong> {{ vacancy.5 }}</p>
+                            <p class="card-text"><strong>Дата публикации:</strong> {{ vacancy.6 }}</p>
+                        </div>
+                    </div>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    <div class="name_hh">
+        <footer class="text-center">
+            <p>Максимов Даниил Максимович РИ-321001</p>
+        </footer>
+    </div>
+{% endblock %}

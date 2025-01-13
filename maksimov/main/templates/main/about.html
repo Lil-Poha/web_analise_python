@@ -1,0 +1,60 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Востребованность Python-программистов</title>
+{% endblock %}
+
+{% block body_cute %}
+<div class="head_php">
+    <h1>Статистика по годам</h1>
+</div>
+<div class="sdvig_about">
+    <!-- Блок 1: Таблица и График -->
+    <div class="about-section">
+        <div class="about-table-container">
+            <h2>Зарплата по годам, руб.</h2>
+            <pre class="table-content">{{ first_table }}</pre>
+        </div>
+        <div class="about-image-container">
+            <img src="{% static 'main/img/uroven_zarplat_po_godam.png' %}" alt="График 1">
+        </div>
+    </div>
+
+    <!-- Блок 2: Таблица и График -->
+    <div class="about-section">
+        <div class="about-table-container">
+            <h2>Количество вакансий</h2>
+            <pre class="table-content">{{ second_table }}</pre>
+        </div>
+        <div class="about-image-container">
+            <img src="{% static 'main/img/dinamica_colichestvo_vacancy_po_godam.png' %}" alt="График 2">
+        </div>
+    </div>
+
+    <!-- Блок 3: Таблица и График -->
+    <div class="about-section">
+        <div class="about-table-container">
+            <h2>Зарплата для Python, в руб.</h2>
+            <pre class="table-content">{{ third_table }}</pre>
+        </div>
+        <div class="about-image-container">
+            <img src="{% static 'main/img/dinamica_urovnia_zarplat_po_python.png' %}" alt="График 3">
+        </div>
+    </div>
+
+    <!-- Блок 4: Таблица и График -->
+    <div class="about-section">
+        <div class="about-table-container">
+            <h2>Количество вакансий для Python</h2>
+            <pre class="table-content">{{ four_table }}</pre>
+        </div>
+        <div class="about-image-container">
+            <img src="{% static 'main/img/dinamica_kolichestva_vakacy_dlya_python.png' %}" alt="График 4">
+        </div>
+    </div>
+</div>
+<footer class="text-center">
+    <p>Максимов Даниил Максимович РИ-321001</p>
+</footer>
+{% endblock %}

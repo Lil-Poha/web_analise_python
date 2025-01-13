@@ -1,0 +1,197 @@
+body{
+    background: #ffffff;
+    color: #000000;
+}
+
+
+.lsls {
+    float: left;
+    width: auto;
+    padding: 2.5%;
+    background: #5f9b57dd;
+    height: auto;
+    color: #020101;
+    border-right: 8px solid #000000;
+    border-bottom: 8px solid #000000;
+}
+
+.logo_py{
+    height: 150px;
+}
+
+aside .logo{
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.image_border1{
+    float: right;
+    top: 0px;
+    right: 0px;
+    width: 180px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.name{
+    background: #ffffff;
+    color: #000000;
+    height: 40px;
+}
+
+.head_php{
+    text-align: center;
+}
+
+.all_text{
+    margin-left: 21%;
+}
+
+aside ul li{
+    color: #000000;
+    display: block;
+    margin-top: 20px;
+}
+
+.func1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image_php {
+margin: 20px 0;
+}
+
+
+.image_php1 {
+    width: 90%;
+    max-width: 1100px; /* Максимальная ширина изображения */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-left: 300px;
+}
+
+.zagolovok{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.text_top{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.text_top_php{
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image_php_ro_container{
+    text-align: center;
+}
+
+.image_php_ro{
+    width: 90%;
+    max-width: 1225px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.last_vacancy{
+    text-align:center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.row > .col-md-4 {
+    margin-bottom: 20px;
+}
+
+/*страничка about*/
+
+.about-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.about-table-container {
+    width: 45%;
+    padding: 20px;
+    background-color: #222222;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-content {
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow: auto;
+    max-width: 100%;
+    color: #ffffff;
+}
+
+.about-image-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-container img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-table-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+aside {
+    float: left;
+    width: 18%;
+    padding: 2.5%;
+    background: #FFFAFA;
+    height: auto;
+    min-height: 103vh;
+    color: #000000;
+    border-right: 8px solid #A9A9A9;
+    position: relative;
+}
+
+.sdvig_about{
+    margin-left: 20%;
+}
